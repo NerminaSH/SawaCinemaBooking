@@ -1,14 +1,11 @@
 // login
 
-
-
 let search = document.getElementById("search");
 let search_icon = document.getElementById("search_icon");
 
 search_icon.addEventListener("click", () => {
   search.classList.toggle("search_input");
 });
-
 
 // year and a-z box start
 let year = document.getElementById("year");
@@ -297,7 +294,7 @@ const body = document.body;
 
 darkModeButton.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
-}); 
+});
 // end
 
 const wrapper = document.querySelector(".wrapper");
@@ -401,4 +398,5 @@ function openForm() {
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";}
+  document.getElementById("myForm").style.display = "none";
+}
