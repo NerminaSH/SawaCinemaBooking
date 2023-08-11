@@ -17,7 +17,6 @@ body {
 }
 
 header {
-    
     position: relative;
     width: 100%;
     height: 670px;
@@ -56,7 +55,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    background: linear-gradient(to left top, #93282896, #080708ab, #932828);}
 
 .logo,
 .end_bx {
@@ -273,7 +272,16 @@ header nav .end_bx .search .search_bx2 a .content2 p {
     font-weight: 500;
 }
 
+button{
+  background: #140101;
+  color: #ebebeb;
+  border-radius: 20px;
 
+}
+button:hover{
+  background-color: #f0ead6;
+  color: #8e2727;
+}
 /* javascript classes start  */
 
 header nav .end_bx .search .search_input {
@@ -809,7 +817,7 @@ footer {
     background-image: -o-linear-gradient( top, #222023, #1e2c47 );
     background-image: linear-gradient( to bottom, #222023, #1e2c47 );
     color: #fff;
-    padding: 220px 0;
+    padding: 50px 0;
     font-size: 17px;
 }
 footer h3 {
@@ -935,6 +943,7 @@ footer hr {
 
 
 
+/* cards */
 body {
   background-color: rgb(114, 9, 20);
   font-family: "Montserrat", helvetica, arial, sans-serif;
@@ -997,6 +1006,7 @@ button:focus {
 .movie-card[data-movie=Insidious] {
   background-image: url(../image/P_HO00010250.jpg);
 }
+
 .movie-card__overlay {
   width: 100%;
   height: 100%;
@@ -1143,10 +1153,11 @@ h1, h2, h3 {
 
 
 
-
+/* slid moving */
 .wrapper {
-  max-width: 1100px;
+  max-width: auto;
   width: 100%;
+  margin-left: 10px;
   position: relative;
 }
 .wrapper i {

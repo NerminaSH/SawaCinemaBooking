@@ -2,348 +2,339 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap cdn link  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="footer.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <!-- font-awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>SawaCinema</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="footer.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <!-- font-awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>SawaCinema</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo"><img src="./image/LOGO.png" alt=""></a>
-            <div class="end_bx">
-                </a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Best Seller</a></li>
-                    <li><a href="#">About</a></li>
-                    <li>Category <i class="fas fa-angle-down"></i>
-                        <div class="list">
-                            <a href="#">Comedy</a>
-                            <a href="#">Horror</a>
-                            <a href="#">Action</a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="search">
-                    <input type="text" placeholder="Search movies..." id="search">
-                    <i class="fas fa-search" id="search_icon"></i>
-                    <div class="search_bx2">
-                    </div>
-                </div>
-                <button class="open-button" onclick="openForm()">Sign In</button>
-
-                <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <h1>Login</h1>
-
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
-                </div>
-                <!-- <a href="./login.html"><img class="nav-sign" src="image/sign-in-hi.jpg" width="90px" height="30px" id="topnav" alt=""></a> -->
+  <header>
+    <nav>
+      <a href="./index.html" class="logo"><img src="./image/LOGO.png" alt=""></a>
+      <div class="end_bx">
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./moviesCard.html">Best Seller</a></li>
+          <li><a href="#">About</a></li>
+          <li>Category <i class="fas fa-angle-down"></i>
+            <div class="list">
+              <a href="#">Bookoing</a>
+              <a href="#">Movies</a>
+              <a href="#"></a>
             </div>
-            <!-- mode dark -->
-            <button id="dark-mode-button">gffh</button>
-            </div>
-        </nav>
-
-        <div class="content">
-            <h6>Duration: <span id="header_dur">1h 47min</span></h6>
-            <h3 id="header_gen"><i class="fas fa-star"></i>6.5
-                <span>Action / Adventure / Sci-Fi</span>
-            </h3>
-            <h1 id="header_title">Barbie</h1>
-            <p id="header_pra">From Wikipedia, the free encyclopedia Rampage is a series of video games released by
-                Midway (1986–2009) and Warner Bros. Interactive Entertainment (2009–present) for the arcade and various
-                consoles. The basic premise of the games is that,
-                due to experiment-related accidents, the player controls a human transformed into a giant monster.</p>
-            <div class="btns">
-                <a href="#video"> <button><i class="fas fa-play" id="play_btn"></i> WATCH Terial</button></a>
-                <a href="./booking.html"><button><i class="fas fa-plus"></i> Book Ticket</button></a>
-            </div>
-        </div>
-        <div class="slider_btns">
-            <h6 class="slider"></h6>
-            <h6 class="slider"></h6>
-            <h6 class="slider"></h6>
-            <h6 class="slider"></h6>
-            <h6 class="slider"></h6>
-        </div>
-    </header>
-
-
-    <!-- START SLIDE CARD -->
-
-    <!-- END SLIDE CARD -->
-
-    <!-- video box start  -->
-    <div class="video_bx">
-        <video src="video/potc.mp4" id="video"></video>
-        <div class="control">
-            <div class="play_redo">
-                <i class="bi bi-play-fill" id="play"></i>
-                <i class="bi bi-arrow-clockwise" id="sec_30"></i>
-                <span>10</span>
-            </div>
-            <div class="start_seekbar_end">
-                <span id="start_time">28.04</span>
-                <div class="seek">
-                    <input type="range" id="seek" value="0">
-                    <h5 id="seek_2"></h5>
-                    <h4></h4>
-                    <h6 id="seek_dot"></h6>
-                </div>
-                <span id="end_time">40.06</span>
-            </div>
-            <div class="cc_vol_screen">
-                <i class="bi bi-badge-cc-fill"></i>
-                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
-                <input type="range" name="vol" id="vol">
-                <i class="bi bi-arrows-fullscreen" id="full_screen"></i>
-            </div>
-        </div>
-
-        <h4 class="title_video">بيت الروبي </h4>
-        <span class="watching"><i class="fas fa-eye"></i>Watching Trial</span>
-        <div class="heart_pluse"> <i class="fas fa-heart"></i> <i class="fas fa-plus"></i></div>
-        <div class="video_list">
-            <img src="./image/بيت الروبي.jpg" alt="" class="video_1">
-            <img src="./image/barbie.jpg" alt="" class="video_1">
-            <img src="./image/elemental.jpg" alt="" class="video_1">
-            <img src="./image/البعبع.jpg" alt="" class="video_1">
-        </div>
-    </div>
-    <br>
-    <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-            <li class="card">
-                <div class="img"><img src="./image/albo3bo3.jpg" alt="img" draggable="false"></div>
-
-            </li>
-            <li class="card">
-                <div class="img"><img src="./image/cobweb.jpg" alt="img" draggable="false"></div>
-
-            </li>
-            <li class="card">
-                <div class="img"><img src="./image/barbie.jpg" alt="img" draggable="false"></div>
-
-            </li>
-            <li class="card">
-                <div class="img"><img src="./image/mrex (1).jpg" alt="img" draggable="false"></div>
-
-            </li>
-            <li class="card">
-                <div class="img"><img src="./image/taj.jpg" alt="img" draggable="false"></div>
-
-            </li>
-            <li class="card">
-                <div class="img"><img src="./image/بيت-الروبي.jpg" alt="img" draggable="false"></div>
-
-            </li>
+          </li>
         </ul>
-        <i id="right" class="fa-solid fa-angle-right"></i>
+        <!-- serch box -->
+        <div class="search">
+          <input type="text" placeholder="Search movies..." id="search">
+          <i class="fas fa-search" id="search_icon"></i>
+          <div class="search_bx2">
+          </div>
+        </div>
+
+        <!-- login -->
+        <button class="open-button" onclick="openForm()">Sign In</button>
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn" onclick="log()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- mode dark -->
+      <button id="dark-mode-button"><i class="fa fa-adjust  ahmad" style="font-size:30px"></i></button>
+      </div>
+    </nav>
+
+    <!-- header photo slide -->
+    <div class="content">
+      <h6>Duration: <span id="header_dur">1h 47min</span></h6>
+      <h3 id="header_gen"><i class="fas fa-star"></i>6.5
+        <span>Action / Adventure / Sci-Fi</span>
+      </h3>
+      <h1 id="header_title">Barbie</h1>
+      <p id="header_pra">Eccentric and individualistic, Barbie is exiled from Barbieland because of her
+        imperfections. When her home world is in peril, Barbie returns with the knowledge that what
+        makes her different also make.</p>
+      <div class="btns">
+        <a href="#video"> <button><i class="fas fa-play" id="play_btn"></i> WATCH Terial</button></a>
+        <a href="./booking.html" target="_blank"><button><i class="fas fa-plus"></i> Book Ticket</button></a>
+      </div>
     </div>
-    <!-- video box end  -->
-
-    <div id="year">
-        <div id="a_z">
-        </div>
+    <div class="slider_btns">
+      <h6 class="slider"></h6>
+      <h6 class="slider"></h6>
+      <h6 class="slider"></h6>
+      <h6 class="slider"></h6>
+      <h6 class="slider"></h6>
     </div>
-    <!--  start slid card -->
-    <div id="movie-card-list">
-        <div class="movie-card" data-movie="Cobweb">
-            <div class="movie-card__overlay"></div>
-            <div class="movie-card__share">
-                <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
-            </div>
-            <div class="movie-card__content">
-                <div class="movie-card__header">
-                    <h1 class="movie-card__title">Cobweb</h1>
-                    <h4 class="movie-card__info">(2023) Horror, Thriller</h4>
-                </div>
-                <p class="movie-card__desc">A blade runner must pursue and try to terminate four replicants who stole a
-                    ship
-                    in space and have returned to Earth to find their creator.</p>
-                <button class="btn btn-outline movie-card__button" type="button">Show More</button>
-            </div>
-        </div>
-        <div class="movie-card" data-movie="Tag">
-            <div class="movie-card__overlay"></div>
-            <div class="movie-card__share">
-                <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
-            </div>
-            <div class="movie-card__content">
-                <div class="movie-card__header">
-                    <h1 class="movie-card__title">Tag</h1>
-                    <h4 class="movie-card__info">(2023) Adventure, Comedy, Arabic, Romantic</h4>
-                </div>
-                <p class="movie-card__desc">Marty McFly, a 17-year-old high school student, is accidentally sent 30
-                    years
-                    into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc
-                    Brown.</p>
-                <button class="btn btn-outline movie-card__button" type="button">Show More</button></a>
-            </div>
-        </div>
-        <div class="movie-card" data-movie="Insidious">
-            <div class="movie-card__overlay"></div>
-            <div class="movie-card__share">
-                <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
-                <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
-            </div>
-            <div class="movie-card__content">
-                <div class="movie-card__header">
-                    <h1 class="movie-card__title">Insidious</h1>
-                    <h4 class="movie-card__info">(2023) Horror, Action, Drama</h4>
-                </div>
-                <p class="movie-card__desc">A secret military project endangers Neo-Tokyo when it turns a biker gang
-                    member
-                    into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.</p>
-                <button class="btn btn-outline movie-card__button" type="button">Show More</button></a>
+  </header>
 
-            </div>
+
+  <!-- video box start  -->
+  <div class="video_bx">
+    <video src="video/potc.mp4" id="video"></video>
+    <div class="control">
+      <div class="play_redo">
+        <i class="bi bi-play-fill" id="play"></i>
+        <i class="bi bi-arrow-clockwise" id="sec_30"></i>
+        <span>10</span>
+      </div>
+      <div class="start_seekbar_end">
+        <span id="start_time">28.04</span>
+        <div class="seek">
+          <input type="range" id="seek" value="0">
+          <h5 id="seek_2"></h5>
+          <h4></h4>
+          <h6 id="seek_dot"></h6>
         </div>
-        <div>
-            <a href="./movies.html"><button class="Watch-More" type="button">More Moveis</button>
-        </div>
+        <span id="end_time">40.06</span>
+      </div>
+      <div class="cc_vol_screen">
+        <i class="bi bi-badge-cc-fill"></i>
+        <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+        <input type="range" name="vol" id="vol">
+        <i class="bi bi-arrows-fullscreen" id="full_screen"></i>
+      </div>
     </div>
+
+    <h4 class="title_video">بيت الروبي </h4>
+    <span class="watching"><i class="fas fa-eye"></i>Watching Trial</span>
+    <div class="heart_pluse"> <i class="fas fa-heart"></i> <i class="fas fa-plus"></i></div>
+    <div class="video_list">
+      <img src="./image/بيت الروبي.jpg" alt="" class="video_1">
+      <img src="./image/barbie.jpg" alt="" class="video_1">
+      <img src="./image/elemental.jpg" alt="" class="video_1">
+      <img src="./image/البعبع.jpg" alt="" class="video_1">
     </div>
-    <!-- end slid card -->
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 about-footer">
-                        <h3>Sawa <br> Cinema </h3>
-                        <ul>
-                            <li><a href="tel:(010) 1234 4321"><i
-                                        class="fas fa-phone fa-flip-horizontal"></i>012345678</a></li>
-                            <li><a href="https://goo.gl/maps/XCGo15xFAwqZs2ih6"><i
-                                        class="fas fa-map-marker-alt"></i></a>
-                                Sawa Cinema Lifestyle Center,
-                                <br />Pr. Hashim St 72,
-                                <br />Amman, Giordania
-                            </li>
-                        </ul>
-                        <a href="" class="btn red-btn">Book Now</a>
-                    </div>
-                    <div class="col-md-6 col-lg-2 page-more-info">
-                        <div class="footer-title">
-                            <h4>Page links</h4>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+  </div>
+  <!-- slid moving -->
+  <br>
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="./image/albo3bo3.jpg" alt="img" draggable="false"></div>
 
-                    <div class="col-md-6 col-lg-3 page-more-info">
-                        <div class="footer-title">
-                            <h4>More Info</h4>
-                        </div>
-                        <ul>
-                            <li><a href="#">Lorem ipsum</a></li>
-                            <li><a href="#">Dolor sit amet</a></li>
-                            <li><a href="#">Consectetur Adipisicing </a></li>
-                            <li><a href="#">Ed do eiusmod tempor incididunt</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-lg-4 open-hours">
-                        <div class="footer-title">
-                            <h4>Open hours</h4>
-                            <ul class="footer-social">
-                                <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./image/cobweb.jpg" alt="img" draggable="false"></div>
 
-                            </ul>
-                        </div>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Thursday & Friday </td>
-                                    <td>9:00am - 3:00am</td>
+      </li>
+      <li class="card">
+        <div class="img"><img src="./image/barbie.jpg" alt="img" draggable="false"></div>
+
+      </li>
+      <li class="card">
+        <div class="img"><img src="./image/mrex (1).jpg" alt="img" draggable="false"></div>
+
+      </li>
+      <li class="card">
+        <div class="img"><img src="./image/taj.jpg" alt="img" draggable="false"></div>
+
+      </li>
+      <li class="card">
+        <div class="img"><img src="./image/بيت-الروبي.jpg" alt="img" draggable="false"></div>
+
+      </li>
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+  <!-- video box end  -->
+  <div id="year">
+    <div id="a_z"></div>
+  </div>
+  <!--  start card -->
+  <div id="movie-card-list">
+    <div class="movie-card" data-movie="Cobweb">
+      <div class="movie-card__overlay"></div>
+      <div class="movie-card__share">
+        <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
+      </div>
+      <div class="movie-card__content">
+        <div class="movie-card__header">
+          <h1 class="movie-card__title">Cobweb</h1>
+          <h4 class="movie-card__info">(2023) Horror, Thriller</h4>
+        </div>
+        <p class="movie-card__desc">A blade runner must pursue and try to terminate four replicants who stole a
+          ship
+          in space and have returned to Earth to find their creator.</p>
+        <button class="btn btn-outline movie-card__button" type="button">Show More</button>
+      </div>
+    </div>
+    <div class="movie-card" data-movie="Tag">
+      <div class="movie-card__overlay"></div>
+      <div class="movie-card__share">
+        <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
+      </div>
+      <div class="movie-card__content">
+        <div class="movie-card__header">
+          <h1 class="movie-card__title">Tag</h1>
+          <h4 class="movie-card__info">(2023) Adventure, Comedy, Arabic, Romantic</h4>
+        </div>
+        <p class="movie-card__desc">يقابل مدرس الموسيقى "تاج" الأخصائية الاجتماعية "فريدة" وتنشأ بينهما قصة حب. حتى يفاجأ تاج
+          بظهور أعراض قوى خارقة غير معلومة المصدر في يوم عيد ميلاده! يحاول تاج ألا يُظهر قدراته ولكن
+          .يواجه مراراً وتكراراً مواقفاً تضطره أن يتدخل وبالأخص عند ظهور أخيه في حياته فجأه</p>
+        <a href="./pageInternal/Movie2.html"><button class="btn btn-outline movie-card__button" type="button">Show More</button></a>
+      </div>
+    </div>
+    <div class="movie-card" data-movie="Insidious">
+      <div class="movie-card__overlay"></div>
+      <div class="movie-card__share">
+        <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
+        <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
+      </div>
+      <div class="movie-card__content">
+        <div class="movie-card__header">
+          <h1 class="movie-card__title">Insidious</h1>
+          <h4 class="movie-card__info">(2023) Horror, Action, Drama</h4>
+        </div>
+        <p class="movie-card__desc">A secret military project endangers Neo-Tokyo when it turns a biker gang
+          member
+          into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.</p>
+        <button class="btn btn-outline movie-card__button" type="button">Show More</button></a>
+
+      </div>
+    </div>
+    <div>
+      <a href="./moviesCard.html"><button class="Watch-More" type="button">More Moveis</button>
+    </div>
+  </div>
+  </div>
+  <!-- end slid card -->
 
 
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Saturday & Tuesday</td>
-                                    <td>9:00am - 9:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="far fa-clock"></i>Monday & Wednesday</td>
-                                    <td>9:00am - 7pm</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="footer-logo">
-
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><img src="./image/cinema.jpeg" alt=""></td>
-                                        <td><img src="./image/download (2).jpeg" alt=""></td>
-                                        <td><img src="./image/download (3).jpeg" alt=""></td>
-                                        <td><img src="./image/cinema.jpeg" alt=""></td>
-                                        <td><img src="./image/download (4).jpeg" alt=""></td>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 about-footer">
+            <h3>Sawa <br> Cinema </h3>
+            <ul>
+              <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>012345678</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                Sawa Cinema Lifestyle Center,
+                <br />Pr. Hashim St 72,
+                <br />Amman, Giordania
+              </li>
+            </ul>
+            <a href="./BOOKING.html" class="btn red-btn" target="_blank">Book Now</a>
+          </div>
+          <div class="col-md-6 col-lg-2 page-more-info">
+            <div class="footer-title">
+              <h4>Page links</h4>
             </div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 page-more-info">
+            <div class="footer-title">
+              <h4>More Info</h4>
+            </div>
+            <ul>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Dolor sit amet</a></li>
+              <li><a href="#">Consectetur Adipisicing </a></li>
+              <li><a href="#">Ed do eiusmod tempor incididunt</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 open-hours">
+            <div class="footer-title">
+              <h4>Open hours</h4>
+              <ul class="footer-social">
+                <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+              </ul>
+            </div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><i class="far fa-clock"></i>Thursday & Friday </td>
+                  <td>9:00am - 3:00am</td>
+
+
+                </tr>
+                <tr>
+                  <td><i class="far fa-clock"></i>Saturday & Tuesday</td>
+                  <td>9:00am - 9:00pm</td>
+                </tr>
+                <tr>
+                  <td><i class="far fa-clock"></i>Monday & Wednesday</td>
+                  <td>9:00am - 7pm</td>
+                </tr>
+
+              </tbody>
+            </table>
             <hr>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="">Privacy policy</a>
-                    </div>
-                    <div class="col-sm-8">
-                        <p>SawaCinema@ 2023 All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+            <div class="footer-logo">
 
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./image/cinema.jpeg" alt=""></td>
+                    <td><img src="./image/download (2).jpeg" alt=""></td>
+                    <td><img src="./image/download (3).jpeg" alt=""></td>
+                    <td><img src="./image/cinema.jpeg" alt=""></td>
+                    <td><img src="./image/download (4).jpeg" alt=""></td>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="">Privacy policy</a>
+          </div>
+          <div class="col-sm-8">
+            <p>SawaCinema@ 2023 All rights reserved</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./js/app.js"></script>
+  </footer>
+  </div>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

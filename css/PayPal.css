@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 
 body {
-    background: #f5f5f5;
+  background: linear-gradient(to left top, #93282896, #080708ab, #932828);
     margin: 20px;
 }
 .rounded {

@@ -6,6 +6,9 @@ let search_icon = document.getElementById("search_icon");
 search_icon.addEventListener("click", () => {
   search.classList.toggle("search_input");
 });
+function log() {
+  alert("You have succesfully login");
+}
 
 // year and a-z box start
 let year = document.getElementById("year");
@@ -36,7 +39,7 @@ const slider_load = () => {
         <span>Action / Adventure / Sci-Fi</span>`;
     header_title.innerText = "Barbie";
     header_pra.innerText =
-      "From Wikipedia, the free encyclopedia Rampage is a series of video games released by Midway (1986–2009) and Warner Bros. Interactive Entertainment (2009–present) for the arcade and various consoles. The basic premise of the games is that, due to experiment-related accidents, the player controls a human transformed into a giant monster.";
+      "  Eccentric and individualistic, Barbie is exiled from Barbieland because of her imperfections. When her home world is in peril, Barbie returns with the knowledge that what makes her different also make..";
     slider_btn[0].style.background = "#fff";
     slider_btn[1].style.background = "rgb(184, 184, 184, .1)";
     slider_btn[2].style.background = "rgb(184, 184, 184, .1)";
@@ -51,7 +54,7 @@ const slider_load = () => {
         <span>Comady / Action / Sci-Fi</span>`;
     header_title.innerText = "Cobweb";
     header_pra.innerText =
-      "Ant-Man is a 2015 American superhero film based on the Marvel Comics characters of the same name: Scott Lang and Hank Pym. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 12th film in the Marvel Cinematic Universe (MCU). The film was directed by Peyton Reed from a screenplay by the writing teams of Edgar Wright and Joe Cornish, and Adam McKay";
+      "vel Cinematic Universe (MCU). The film was directed by Peyton Reed from a screenplay by the writing teams of Edgar Wright and Joe Cornish, and Adam McKay";
     slider_btn[0].style.background = "rgb(184, 184, 184, .1)";
     slider_btn[1].style.background = "#fff";
     slider_btn[2].style.background = "rgb(184, 184, 184, .1)";
@@ -81,7 +84,7 @@ const slider_load = () => {
         <span>Comady / Action / Drama</span>`;
     header_title.innerText = "البعبع";
     header_pra.innerText =
-      "Pirates of the Caribbean is a series of fantasy swashbuckler films produced by Jerry Bruckheimer and based on Walt Disney's theme park attraction of the same name. The film series serves as a major component of the eponymous media franchise.";
+      " في إطار من الحركة والكوميديا، تقع طبيبة صيدلانية في حب المجرم (سلطان) الذي يقرر التوبة وترك  الإجرام، ويواجه مع صديقه (سوكا) العديد من المواقف التي تغير مجرى اﻷحداث رأسها على عقب";
     slider_btn[0].style.background = "rgb(184, 184, 184, .1)";
     slider_btn[1].style.background = "rgb(184, 184, 184, .1)";
     slider_btn[2].style.background = "rgb(184, 184, 184, .1)";
